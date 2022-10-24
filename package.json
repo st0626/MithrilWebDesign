@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "run",
-    "watch": "nodemon ./app.js"
+    "watch": "nodemon ./app.js",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
