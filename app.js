@@ -1,7 +1,6 @@
 const express = require('express')
 const path = require('path')
-const port = 3000
-const hostname = 'localhost'
+const port = process.env.PORT || 3000
 
 
 const app = express()
@@ -14,6 +13,6 @@ app.get('/', (req, res) => {
     res.render('layout')
 })
 
-app.listen(port, hostname, () => {
-    console.log(`server running at http://${hostname}:${port}/`)
+app.listen(port, () => {
+    console.log(`server running at port ${port}`)
 })
