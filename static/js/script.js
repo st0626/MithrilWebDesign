@@ -1,6 +1,7 @@
 let topBtn = document.querySelector('.totop')
 let h = document.querySelector('.hover-effect')
 
+
 window.onscroll = () => {scrollFunction()}
 
 function scrollFunction() {
@@ -15,7 +16,6 @@ function topFunction() {
     document.body.scrollTop = 0
     document.documentElement.scrollTop = 0
 }
-
-function hoverEffect(){
-
+function showModal(){
+    $("#myModal").modal()
 }
