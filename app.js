@@ -2,8 +2,7 @@ const express = require('express')
 const path = require('path')
 const nodeMailer = require('nodemailer')
 
-const PORT = 8080
-const HOST = 'localhost'
+const port = process.env.PORT || 8080
 
 const app = express()
 
@@ -23,6 +22,4 @@ app.get('/', (req, res) => {
 
 
 
-app.listen(PORT, () => {
-    console.log(`server running at http://${HOST}:${PORT}`)
-})
+app.listen(port, () => console.log('Application is running'))
