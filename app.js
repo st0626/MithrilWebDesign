@@ -2,7 +2,7 @@ const express = require('express')
 const path = require('path')
 const nodeMailer = require('nodemailer')
 
-const port = process.env.PORT || 3000
+const PORT = process.env.PORT || 8000
 
 const app = express()
 
@@ -22,6 +22,6 @@ app.get('/', (req, res) => {
 
 
 
-app.listen(port, () => {
-    console.log(`server running at port ${port}`)
+app.listen(PORT, () => {
+    console.log(`server running at port ${PORT}`)
 })
