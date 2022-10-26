@@ -3,7 +3,7 @@ const path = require('path')
 const nodeMailer = require('nodemailer')
 
 const PORT = 8080
-const HOST = '0.0.0.0'
+const HOST = 'localhost'
 
 const app = express()
 
